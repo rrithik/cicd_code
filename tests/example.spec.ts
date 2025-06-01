@@ -5,8 +5,8 @@ test('has title', async ({ page }) => {
 	await expect(page.getByText('Create a new chart using the navigation above.')).toBeVisible();
 });
 
-test('has t344itle', async ({ page }) => {
+test('has ', async ({ page }) => {
 	await page.goto('/');
-	await expect(page.getByText('No saved charts yet.\n' +
+	await expect(page.getByText('No savikjbkjbjkhed charts yet.\n' +
 		'\n')).toBeVisible();
 });
