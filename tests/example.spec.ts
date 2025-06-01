@@ -7,6 +7,6 @@ test('has title', async ({ page }) => {
 
 test('has ', async ({ page }) => {
 	await page.goto('/');
-	await expect(page.getByText('No savikjbkjbjkhed charts yet.\n' +
+	await expect(page.getByText('No saved charts yet.\n' +
 		'\n')).toBeVisible();
 });
