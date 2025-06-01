@@ -1,0 +1,10 @@
+name: Test Pull Requests
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    uses: ./.github/workflows/testing.yaml
+
