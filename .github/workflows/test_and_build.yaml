@@ -19,6 +19,8 @@ jobs:
       - run: npx playwright install --with-deps
       - run: npx playwright test
       - run: npm run build
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
       - if: ${{ inputs.upload-pages-artifact }}
         uses: actions/upload-pages-artifact@v3
         with:
